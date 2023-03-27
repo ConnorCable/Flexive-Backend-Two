@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/auth")
-@CrossOrigin
+@CrossOrigin(origins = ["https://flexive-frontend.herokuapp.com/"], allowCredentials = "true")
 public class AuthController {
 
 
