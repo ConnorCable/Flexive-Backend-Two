@@ -25,7 +25,8 @@ public class UserController {
     @Autowired
     private UserService userService;
     private UserServiceImpl userServiceImpl;
-
+    
+    @CrossOrigin
     @PostMapping("/register")
     public String add(@RequestBody User user){
         if(userService.validateUser(user)){
